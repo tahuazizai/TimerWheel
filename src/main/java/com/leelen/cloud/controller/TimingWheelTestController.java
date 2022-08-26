@@ -24,7 +24,7 @@ public class TimingWheelTestController {
     @PostMapping("/addTask")
     public void addTask() {
         TestDTO testDTO = new TestDTO("12", "xiaowang");
-        log.info("123");
+        log.info("release");
         TimingWheelUtil.taskAdd(testDTO, 10, TimeUnit.SECONDS);
     }
 }
